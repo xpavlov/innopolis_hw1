@@ -1,6 +1,7 @@
 # A simple aiohttp and aiomysql demo
 
 ##Setting everything up:
+
 __1.__ Create mysql database and import init_db.sql. This is phpmyadmin-generated dump of the test database without any data. I e it contains only structure. Note that maybe you will have to change manually encoding before import for every table if you want to use utf8 (the default charset was set to latin1)
 
 __2.__ Edit main.py and fill aiomysql.create_pool(...) function call with actual database credentials.
