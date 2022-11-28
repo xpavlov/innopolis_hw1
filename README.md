@@ -13,13 +13,13 @@ __4.__ To start app simply run  __python main.py__ By default the app listens on
 
 To add data you can post json to (beware of content-type header!):
 
-/addstore - to add new store. Example: {"name":"Test 2", "address": "test address"}
+/addstore - to add new store. Example payload: {"name":"Test 2", "address": "test address"}
 
-/additem - example: {"name":"6th item", "price": 1.6}
+/additem - example payload: {"name":"6th item", "price": 1.6}
 
-/addsale - to link one sale and store - example: {"store_id":18,"item_id":4}
+/addsale - to link one sale and store - example payload: {"store_id":18,"item_id":4}
 
-Every successful request will return 200 OK with corresponding new record id wrapped in json.
+Every successful request will return 200 OK with corresponding new record id wrapped in json. Every wrong request will result in 500 Error - then you can look for the actual reason to the server's console log
 
 To get data:
 
