@@ -21,6 +21,8 @@ To add data you can post json to (beware of content-type header!):
 
 Every successful request will return 200 OK with corresponding new record id wrapped in json. Every wrong request will result in 500 Error - then you can look for the actual reason to the server's console log
 
+Working example: You can use curl for posting data e.g. run __curl --header "Content-Type: application/json" --request POST --data '{"name":"Test curl store","address":"localhost"}' http://127.0.0.1:8080/addstore__
+
 To get data:
 
 all stores - /stores
@@ -31,5 +33,5 @@ Top 10 selling stores (with actual income) within last 30 days. /top10shops
 
 10 bestselling items across all time - /top10items
 
-
+Working example: Simply run __curl http://127.0.0.1/stores__
 
