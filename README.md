@@ -33,5 +33,5 @@ Top 10 selling stores (with actual income) within last 30 days. /top10shops
 
 10 bestselling items across all time - /top10items
 
-Working example: Simply run __curl http://127.0.0.1/stores__
+Working example: Simply run __curl http://127.0.0.1:8080/stores__
 
